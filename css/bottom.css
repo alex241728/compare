@@ -1,4 +1,4 @@
-.bottom .rectangle
+.bottom
 {
     position: absolute;
     left: 0%;
@@ -9,31 +9,31 @@
     z-index: 2;
 }
 
-.bottom .logo
+.bottom .left .logo
 {
     position: absolute;
     left: 11%;
-    top: 1090px;
+    top: 90px;
     width: 17.46%;
     height: auto;
     z-index: 3;
 }
 
-.bottom .wechat
+.bottom .left .wechat
 {
     position: absolute;
     left: 11%;
-    top: 1180px;
+    top: 180px;
     width: 2.73%;
     height: auto;
     z-index: 3;
 }
 
-.bottom .qq
+.bottom .left .qq
 {
     position: absolute;
     left: 14%;
-    top: 1180px;
+    top: 180px;
     width: 2.73%;
     height: auto;
     z-index: 3;
@@ -43,13 +43,13 @@
 {
     position: absolute;
     left: 17%;
-    top: 1180px;
+    top: 180px;
     width: 2.73%;
     height: auto;
     z-index: 3;
 }
 
-.bottom .text-1
+.bottom .middle .text
 {
     color: #454545;
     font-family: HONOR Sans;
@@ -59,50 +59,18 @@
     line-height: normal;
     position: absolute;
     left: 35%;
-    top: 1070px;
+    top: 100px;
     width: auto;
     height: auto;
     z-index: 3;
 }
 
-.bottom .text-2
-{
-    color: #454545;
-    font-family: HONOR Sans;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: absolute;
-    left: 35%;
-    top: 1130px;
-    width: auto;
-    height: auto;
-    z-index: 3;
-}
-
-.bottom .text-3
-{
-    color: #454545;
-    font-family: HONOR Sans;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: absolute;
-    left: 35%;
-    top: 1190px;
-    width: auto;
-    height: auto;
-    z-index: 3;
-}
-
-.bottom .slogan
+.bottom .right .slogan
 {
     position: absolute;
     right: 7%;
-    top: 1080px;
-    width: auto;
-    height: 10%;
+    top: 80px;
+    width: 30%;
+    height: auto;
     z-index: 3;
 }

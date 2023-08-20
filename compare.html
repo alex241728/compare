@@ -119,7 +119,7 @@
 
                 <!-- hover -->
                 <div class="rectangle-2">
-                    <a href="https://mp.weixin.qq.com/s/H_yxqx1ajzaIvVpYzfghaA" rel="noopener noreferrer" target="_blank">
+                    <a href="https://mp.weixin.qq.com/s/UCRB8SX-WJMx5CtkYQfsqQ" rel="noopener noreferrer" target="_blank">
                         <div class="rectangle-3">
                             <div class="text-wrapper">了解更多</div>
                         </div>
@@ -130,39 +130,68 @@
 
         <!-- 底部 -->
         <div class="bottom">
-            <!-- 底部背景 -->
-            <div class="rectangle"></div>>
+            <div class="left">
+                <img class="logo" src="./images/mainLogo.png" alt="高老师工作室" title="高老师工作室">
 
-            <!-- logo -->
-            <img class="logo" src="./images/mainLogo.png" alt="高老师工作室" title="高老师工作室">
+                <a href="weixin://dl/addfriend?wechatid=GaohaihongHelen">
+                    <img id="copyImage" class="wechat" src="./images/微信图标.png" alt="微信" title="微信">
+                </a>
 
-            <!-- 微信 -->
-            <a href="home.html">
-                <img class="wechat" src="./images/微信图标.png" alt="微信" title="微信">
-            </a>
+                <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2332106974">
+                    <img class="qq" src="./images/QQ图标.png" alt="QQ" title="QQ">
+                </a>
 
-            <!-- QQ -->
-            <a href="home.html">
-                <img class="qq" src="./images/QQ图标.png" alt="QQ" title="QQ">
-            </a>
-
-            <!-- 地图 -->
-            <a href="home.html">
-                <img class="map" src="./images/地图图标.png" alt="位置" title="位置">
-            </a>
-
-            <!-- 
-                文本
-                无锡市石皮路...
-                微信...
-                QQ... 
-            -->
-            <div class="text-1">无锡市石皮路7号国联慧空间707号</div>
-            <div class="text-2">微信：GaohaihongHelen</div>
-            <div class="text-3">QQ：2332106974</div>
-
-            <!-- 口号 -->
-            <img class="slogan" src="./images/我们培养有后劲的探索者，不止于录取！.png" alt="我们培养有后劲的探索者，不止于录取！" title="我们培养有后劲的探索者，不止于录取！">
+                <a href="https://j.map.baidu.com/82/Kv1J">
+                    <img class="map" src="./images/地图图标.png" alt="位置" title="位置">
+                </a>
+            </div>
+            
+            <div class="middle">
+                <div class="text">无锡市石皮路7号国联慧空间707号
+                    <br>微信：GaohaihongHelen
+                    <br>QQ：2332106974
+                </div>
+            </div>
+            
+            <div class="right">
+                <img class="slogan" src="./images/我们培养有后劲的探索者，不止于录取！.png" alt="我们培养有后劲的探索者，不止于录取！" title="我们培养有后劲的探索者，不止于录取！">
+            </div>
         </div>
+            
+        <script>
+            document.addEventListener('DOMContentLoaded', function () 
+            {
+                var copyImage = document.getElementById('copyImage');
+                copyImage.addEventListener('click', function () 
+                {
+                    // 要复制到剪贴板的内容
+                    var textToCopy = 'GaohaihongHelen';
+
+                    // 创建一个临时 textarea 元素并设置其值为要复制的内容
+                    var tempTextarea = document.createElement('textarea');
+                    tempTextarea.value = textToCopy;
+                    document.body.appendChild(tempTextarea);
+                    tempTextarea.select();
+
+                    try 
+                    {
+                        // 将选中的文本复制到剪贴板
+                        document.execCommand('copy');
+
+                        // 提示用户复制成功
+                        alert('内容已复制到剪贴板：' + textToCopy);
+                    } 
+                    catch (error) 
+                    {
+                        console.error('无法复制到剪贴板:', error);
+                    } 
+                    finally 
+                    {
+                        // 删除临时 textarea
+                        document.body.removeChild(tempTextarea);
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
